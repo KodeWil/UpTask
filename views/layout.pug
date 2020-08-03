@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/public/css/normalize.css")
+        link(rel="stylesheet", href="/public/css/app.css")
+        title #{pageName}
+    body
+        header.barra
+            h1 UpTask - Project Manager
+            a(href='#') Close session
+        
+        main.contenedor
+            aside.contenedor-proyectos
+                .panel.crear-proyecto
+                    a(href="#" class="boton") New project   
+                        span +
+
+                .panel.lista-proyectos
+                    h2 Projects
+                    ul#proyectos.proyectos
+                        li
+                            a(href="#") E-commerce design
+                        li
+                            a(href="#") Logo design
+                        li
+                            a(href="#") Blog design
+
+            block content

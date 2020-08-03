@@ -1,3 +1,11 @@
 exports.projectHome = (req, res) => {
-    res.send('Index');
+    res.render('Index', {
+        pageName: 'Projects '
+    });
+}
+
+exports.projectWe = (request, response) => {
+    response.render('We', {
+        pageName: 'We projects'
+    }); 
 }

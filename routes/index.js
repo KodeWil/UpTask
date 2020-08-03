@@ -8,8 +8,6 @@ module.exports = function() {
 
     router.get('/', projectController.projectHome);  
     
-    router.get('/we', (request, response) => {
-        response.send('We')
-    });  
+    router.get('/we', projectController.projectWe);  
     return router;
 }
